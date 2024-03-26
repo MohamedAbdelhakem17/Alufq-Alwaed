@@ -480,7 +480,7 @@ a {
 
 .project {
     transition: transform var(--main-transation-time) ease-in-out;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.1;
 }
 
 .project:hover {
