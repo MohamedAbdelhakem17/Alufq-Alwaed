@@ -51,7 +51,7 @@ const updateActiveLinkOnScroll = () => {
     const scrollPosition = window.scrollY;
     const homeLink = document.getElementById("index");
     const aboutSectionOffset = document.getElementById("about").offsetTop - 30;
-    
+
     if (scrollPosition >= 0 && scrollPosition < aboutSectionOffset) {
         homeLink.classList.add("active");
     } else {
@@ -69,8 +69,6 @@ const updateActiveLinkOnScroll = () => {
         }
     });
 };
-
-
 
 opoeNavbarButton.addEventListener("click", openNavbar)
 closeNavbarButton.addEventListener("click", closeNavbar)
@@ -95,3 +93,4 @@ document.addEventListener("scroll", changeNavbarBackground);
 
 document.addEventListener('scroll', updateActiveLinkOnScroll);
 window.addEventListener('scroll', updateActiveLinkOnScroll);
+
