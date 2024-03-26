@@ -1,15 +1,14 @@
 const imgs = [
-    "images/gallary/(21).jpg", "images/gallary/(32).jpg", "images/gallary/(17).jpg", "images/gallary/(20).jpg",
-    "images/gallary/(22).jpg", "images/gallary/(19).jpg", "images/gallary/(35).jpg",
-    "images/gallary/(10).jpg", "images/gallary/(23).jpg", "images/gallary/(6).jpg", "images/gallary/(5).jpg",
-    "images/gallary/(30).jpg", "images/gallary/(7).jpg", "images/gallary/(15).jpg", "images/gallary/(14).jpg",
-    "images/gallary/(1).jpg", "images/gallary/(24).jpg",
-    "images/gallary/(29).jpg", "images/gallary/(12).jpg", "images/gallary/(3).jpg", "images/gallary/(18).jpg",
-    "images/gallary/(27).jpg", "images/gallary/(4).jpg", "images/gallary/(9).jpg", "images/gallary/(34).jpg",
-    "images/gallary/(26).jpg", "images/gallary/(8).jpg", "images/gallary/(31).jpg",
-    "images/gallary/(2).jpg", "images/gallary/(10).jpg"
+"images/gallary/(32).jpg", "images/gallary/(17).jpg", "images/gallary/(20).jpg",
+"images/gallary/(22).jpg", "images/gallary/(19).jpg", "images/gallary/(35).jpg",
+"images/gallary/(10).jpg", "images/gallary/(23).jpg", "images/gallary/(6).jpg", "images/gallary/(5).jpg",
+"images/gallary/(30).jpg", "images/gallary/(7).jpg", "images/gallary/(15).jpg", "images/gallary/(14).jpg",
+"images/gallary/(1).jpg", "images/gallary/(24).jpg",
+"images/gallary/(12).jpg", "images/gallary/(3).jpg", "images/gallary/(18).jpg",
+"images/gallary/(27).jpg", "images/gallary/(4).jpg", "images/gallary/(9).jpg", "images/gallary/(34).jpg",
+"images/gallary/(26).jpg", "images/gallary/(8).jpg", "images/gallary/(31).jpg",
+"images/gallary/(2).jpg", "images/gallary/(10).jpg"
 ];
-
 const showMoreButton = document.getElementById("see-more");
 const galleryContainer = document.getElementById("gallery-container");
 const imgView = document.getElementById("view");

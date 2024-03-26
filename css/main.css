@@ -11,7 +11,6 @@
     --main-transation-time: 350ms;
 }
 
-
 body {
     font-family: "Poppins", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -25,7 +24,6 @@ ul {
 a {
     text-decoration: none;
 }
-
 
 .main-title {
     font-size: 40px;
@@ -80,7 +78,6 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-
     html {
         font-size: 14px;
     }
@@ -129,7 +126,6 @@ a {
     width: 100px;
 }
 
-
 .navbar .brand img {
     width: 55%;
 }
@@ -141,7 +137,6 @@ a {
 .navbar .open:hover {
     box-shadow: 0 0 5px 3px white;
 }
-
 
 .navbar .menu {
     display: flex;
@@ -171,8 +166,7 @@ a {
     background-color: white;
 }
 
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .navbar .menu {
         display: none;
     }
@@ -192,7 +186,7 @@ a {
         border-radius: 20px;
         padding-bottom: 10px;
         margin: 50px auto;
-        animation: open-navbar .8s ease-in-out;
+        animation: open-navbar 0.8s ease-in-out;
     }
 
     .navbar .menu li.close {
@@ -245,13 +239,13 @@ a {
     }
 }
 
-@media (max-width:1179px) {
+@media (max-width: 1179px) {
     html {
         font-size: 14px;
     }
 }
 
-@media (max-width:470px) {
+@media (max-width: 470px) {
     .navbar .brand {
         width: 100px;
     }
@@ -322,7 +316,7 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
-    padding: 10px 0px
+    padding: 10px 0px;
 }
 
 .home .container .info span {
@@ -332,7 +326,6 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-
     html {
         font-size: 14px;
     }
@@ -381,6 +374,16 @@ a {
     letter-spacing: 2px;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about img {
+        transform: scale(1.25);
+    }
+
+    .about .content {
+        transform: scale(0.9) !important;
+    }
+}
+
 /* ==================== End About Section ==================== */
 
 /* ==================== Start Services Section ==================== */
@@ -395,7 +398,7 @@ a {
 }
 
 .services {
-    aspect-ratio: 1 / .7;
+    aspect-ratio: 1 / 0.7;
 }
 
 .services .icon {
@@ -436,7 +439,6 @@ a {
     color: white !important;
 }
 
-
 .services .services-info h5 {
     margin-top: 1rem;
     padding: 10px;
@@ -453,7 +455,26 @@ a {
     line-height: 1.8;
     font-weight: 700;
     transition: all var(--main-transation-time) ease-in-out;
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    .services {
+        aspect-ratio: 1 / 1;
+    }
+
+    .services .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    .services .services-info h5 {
+        font-size: 1.5rem;
+    }
 }
 
 /* ==================== End Services Section ==================== */
@@ -469,7 +490,7 @@ a {
 }
 
 #project .options .option.active {
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 
 #project .options .option.active,
@@ -480,7 +501,7 @@ a {
 
 .project {
     transition: transform var(--main-transation-time) ease-in-out;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/0.7;
 }
 
 .project:hover {
@@ -514,18 +535,31 @@ a {
     padding: 0 30px;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    .project {
+        aspect-ratio: 1/0.9;
+    }
+
+    .project .project-header h4 {
+        font-size: 1.11rem;
+    }
+}
 
 /* ==================== End Project Section ==================== */
 
 /* ==================== Start Gallery Section ==================== */
 .gallery img {
-    aspect-ratio: 1/.7;
+    aspect-ratio: 1/0.7;
     cursor: pointer;
     transition: transform var(--main-transation-time) ease-in-out;
 }
 
 .gallery .gallery-img:hover {
-    transform: scale(1.1)rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
 }
 
 .gallery .view {
@@ -622,7 +656,6 @@ a {
 .contact .icon h6 {
     font-size: 1.3rem;
     font-weight: 600;
-
 }
 
 .form-control:focus {
@@ -630,17 +663,13 @@ a {
     box-shadow: none;
 }
 
-
-
 @media screen and (max-width: 500px) {
-
     .contact h2+P {
         width: 100%;
     }
 }
 
 /* ==================== End Contact US Section ==================== */
-
 
 /* ==================== Start Footer ==================== */
 footer {
@@ -681,7 +710,7 @@ footer .middle a:hover {
 }
 
 footer .middle a i {
-    padding: 10px
+    padding: 10px;
 }
 
 footer .end img {
@@ -713,7 +742,7 @@ footer .end .social a {
 
 footer .end .social a:hover {
     box-shadow: 0px 0px 10px 2px white;
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 
 /* ==================== End Footer ==================== */
@@ -724,7 +753,7 @@ footer .end .social a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0B0B14;
+    background-color: #0b0b14;
     position: fixed;
     inset: 0;
     z-index: 999999999999999999;

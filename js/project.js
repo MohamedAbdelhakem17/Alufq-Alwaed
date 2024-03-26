@@ -9,13 +9,12 @@ const projects = [
     {
         projectName: "Dubai south development phase 1",
         consultant: "Parsons",
-        mainContractor: "Oriant irrigation Services",
+        mainContractor: "Oriant Irrigation Services",
         client: "EMAAR",
         status: "pending"
     },
     {
         projectName: "MAJAN Phase 1",
-        tasks: ["paving installation", "swimming pools", "kerbston work"],
         client: "DHRE",
         consultant: "Parsons",
         mainContractor: "ZAID ALHUSAN",
@@ -23,7 +22,6 @@ const projects = [
     },
     {
         projectName: "MAJAN Phase 2.1 &2.2 2.3",
-        tasks: ["paving installation", "kerbstone works"],
         client: "DHRE",
         consultant: "Parsons",
         mainContractor: "ZAID ALHUSAN",
@@ -31,13 +29,13 @@ const projects = [
     },
     {
         projectName: "DUBAI HILLS ESTAT Phase 3",
-        tasks: ["paving", "Granite installation"],
         client: "EMAAR",
         consultant: "KEO International",
-        mainContractor: "Ghantoot landscaping",
+        mainContractor: "Ghantoot Landscaping",
         status: "pending"
     }
 ];
+
 
 const projectContainer = document.getElementById("project-container")
 const options = Array.from(document.querySelectorAll("#project .options .option"))
@@ -54,10 +52,6 @@ function displayProject(data) {
                 <div class="project-info p-2">
                     <div class="px-2 py-1 mb-1">
                         <p class="label m-0"><i class="fa-regular fa-circle-check"></i>Client</p>
-                        <p class="value m-0">${element.scopeOfWork}</p>
-                    </div>
-                    <div class="px-2 py-1 mb-1">
-                        <p class="label m-0"><i class="fa-regular fa-circle-check"></i>Scope Of Work</p>
                         <p class="value m-0">${element.client}</p>
                     </div>
                     <div class="px-2 py-1 mb-1">
@@ -65,15 +59,9 @@ function displayProject(data) {
                         <p class="value m-0">${element.consultant}</p>
                     </div>
                     <div class="px-2 py-1 mb-1">
-                        <p class="label m-0"><i class="fa-regular fa-circle-check"></i> Main Contractor</p>
+                        <p class="label m-0"><i class="fa-regular fa-circle-check"></i>Main Contractor</p>
                         <p class="value m-0">${element.mainContractor}</p>
                     </div>
-                    ${element.tasks ? `
-                    <div class="px-2 py-1 mb-1">
-                        <p class="label m-0"><i class="fa-regular fa-circle-check"></i> Tasks </p>
-                        <p class="value m-0">${element.tasks.map(task => task).join(" , ")}</p>
-                    </div>
-                    ` : ""}
                 </div>
             </div>
         </div>
