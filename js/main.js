@@ -2,6 +2,7 @@ import "./navbar.js"
 import "./typed.module.js"
 import "./gallery.js"
 import "./project.js"
+import "./contactus.js"
 
 const loading = document.querySelector(".loding-screen")
 
@@ -35,3 +36,4 @@ window.addEventListener("load", () => {
         }, 300)
     }, 1900)
 })
+

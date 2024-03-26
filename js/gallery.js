@@ -1,6 +1,6 @@
 const imgs = [
 "images/gallary/(32).jpg", "images/gallary/(17).jpg", "images/gallary/(20).jpg",
-"images/gallary/(22).jpg", "images/gallary/(19).jpg", "images/gallary/(35).jpg",
+ "images/gallary/(19).jpg", "images/gallary/(35).jpg",
 "images/gallary/(10).jpg", "images/gallary/(23).jpg", "images/gallary/(6).jpg", "images/gallary/(5).jpg",
 "images/gallary/(30).jpg", "images/gallary/(7).jpg", "images/gallary/(15).jpg", "images/gallary/(14).jpg",
 "images/gallary/(1).jpg", "images/gallary/(24).jpg",
