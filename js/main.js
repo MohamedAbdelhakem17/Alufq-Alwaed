@@ -3,6 +3,8 @@ import "./typed.module.js"
 import "./gallery.js"
 import "./project.js"
 
+const loading = document.querySelector(".loding-screen")
+
 // Js Typed  in Hero Section
 const typed = new Typed('#element', {
     strings: ['MEP Installations', 'Swimming pools', 'Floor  wall tilling'],
@@ -18,3 +20,18 @@ window.addEventListener("load", () => {
     })
 })
 AOS.init();
+
+
+// Loading Screen
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loading.children[0].style.opacity = 0
+        setTimeout(() => {
+            loading.style.opacity = 0
+            setTimeout(() => {
+                loading.remove()
+                document.body.style.overflow="auto"
+            }, 0)
+        }, 300)
+    }, 1900)
+})
