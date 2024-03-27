@@ -4,35 +4,40 @@ const projects = [
         consultant: "Parsons",
         mainContractor: "ZAID ALHUSSAN",
         client: "EMAAR",
-        status: "pending"
+        status: "pending" ,
+        scopeOfWork : "Landscape" 
     },
     {
         projectName: "Dubai south development phase 1",
         consultant: "Parsons",
         mainContractor: "Oriant Irrigation Services",
         client: "EMAAR",
-        status: "pending"
+        status: "pending",
+        scopeOfWork : "Landscape"
     },
     {
         projectName: "MAJAN Phase 1",
         client: "DHRE",
         consultant: "Parsons",
         mainContractor: "ZAID ALHUSAN",
-        status: "achievement"
+        status: "achievement",
+        scopeOfWork : "Landscape"
     },
     {
         projectName: "MAJAN Phase 2.1 &2.2 2.3",
         client: "DHRE",
         consultant: "Parsons",
         mainContractor: "ZAID ALHUSAN",
-        status: "achievement"
+        status: "achievement",
+        scopeOfWork : "Landscape"
     },
     {
         projectName: "DUBAI HILLS ESTAT Phase 3",
         client: "EMAAR",
         consultant: "KEO International",
         mainContractor: "Ghantoot Landscaping",
-        status: "pending"
+        status: "pending",
+        scopeOfWork : "Landscape"
     }
 ];
 
@@ -61,6 +66,10 @@ function displayProject(data) {
                     <div class="px-2 py-1 mb-1">
                         <p class="label m-0"><i class="fa-regular fa-circle-check"></i>Main Contractor</p>
                         <p class="value m-0">${element.mainContractor}</p>
+                    </div>
+                    <div class="px-2 py-1 mb-1">
+                        <p class="label m-0"><i class="fa-regular fa-circle-check"></i>Scope Of Work</p>
+                        <p class="value m-0">${element.scopeOfWork}</p>
                     </div>
                 </div>
             </div>

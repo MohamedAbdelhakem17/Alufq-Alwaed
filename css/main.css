@@ -247,7 +247,7 @@ a {
 
 @media (max-width: 470px) {
     .navbar .brand {
-        width: 100px;
+        width: 90px;
     }
 
     .navbar .brand h3 {
@@ -255,8 +255,7 @@ a {
     }
 
     .navbar .container-fluid {
-        justify-content: space-around;
-        padding: 0;
+        padding: 0 10px;
     }
 }
 
@@ -501,7 +500,7 @@ a {
 
 .project {
     transition: transform var(--main-transation-time) ease-in-out;
-    aspect-ratio: 1/.8;
+    aspect-ratio: 1/.9;
 }
 
 .project:hover {
@@ -541,11 +540,24 @@ a {
     }
 
     .project {
-        aspect-ratio: 1/0.9;
+        aspect-ratio: 1/1;
+        padding-bottom: 5px;
     }
 
     .project .project-header h4 {
         font-size: 1.11rem;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 767px) {
+    .project {
+        aspect-ratio: 1/.6;
+    }
+}
+
+@media (max-width: 509px) {
+    .project {
+        aspect-ratio: 1/.8;
     }
 }
 
@@ -594,21 +606,21 @@ a {
     width: 100%;
 }
 
-.gallery .view .container h3 {
+.gallery .view .container .h3 {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     transition: color var(--main-transition) linear;
     color: var(--mute-text);
 }
 
-.gallery .view .container h3:hover {
-    color: var(--section-bg);
+.gallery .view .container .h3:hover {
+    color: var(--main-color-alt);
 }
 
-.gallery .view .container h3.close {
+.gallery .view .container span.close {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 30px;
 }
 
@@ -656,6 +668,14 @@ a {
 .contact .icon h6 {
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.contact .error-massege{
+    font-size: 17px;
+    color: red;
+    margin: 5px 0px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .form-control:focus {
@@ -819,3 +839,36 @@ footer .end .social a:hover {
 }
 
 /* ==================== End Looding screen ==================== */
+
+/* ==================== Start Go to Top ==================== */
+.go-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all var(--main-transation-time) linear;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.go-to-top:hover {
+    transform: scale(.9);
+    box-shadow: 0px 0px 2px 1px var(--main-color-alt);
+}
+
+.go-to-top.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ==================== End Go to Top ==================== */

@@ -1,10 +1,12 @@
-import "./navbar.js"
+import "./navbar.module.js"
 import "./typed.module.js"
-import "./gallery.js"
-import "./project.js"
+import "./gallery.module.js"
+import "./project.module.js"
 import "./contactus.js"
 
 const loading = document.querySelector(".loding-screen")
+const goToTopButton = document.querySelector(".go-to-top")
+
 
 // Js Typed  in Hero Section
 const typed = new Typed('#element', {
@@ -31,9 +33,26 @@ window.addEventListener("load", () => {
             loading.style.opacity = 0
             setTimeout(() => {
                 loading.remove()
-                document.body.style.overflow="auto"
+                document.body.style.overflow = "auto"
             }, 0)
         }, 300)
     }, 1900)
 })
 
+// Go To Top
+
+const scrollToTop = () => {
+    if (window.scrollY > 50) {
+        goToTopButton.classList.add("active");
+    } else {
+        goToTopButton.classList.remove("active");
+    }
+    goToTopButton.addEventListener("click", () => {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+}
+
+window.addEventListener("scroll", scrollToTop)

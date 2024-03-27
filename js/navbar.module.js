@@ -38,7 +38,7 @@ const changeNavbarBackground = () => {
 const niceScroll = (element) => {
     const sectionId = element.getAttribute("href").slice(1);
     const section = document.getElementById(sectionId);
-    if (sectionId !== "/") {
+    if (sectionId) {
         const sectionOffsetTop = section.offsetTop;
         window.scrollTo({
             top: sectionOffsetTop - 30,
