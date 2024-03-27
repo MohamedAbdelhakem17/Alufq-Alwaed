@@ -10,7 +10,7 @@ const goToTopButton = document.querySelector(".go-to-top")
 
 // Js Typed  in Hero Section
 const typed = new Typed('#element', {
-    strings: ['MEP Installations', 'Swimming pools', 'Floor  wall tilling'],
+    strings: ['MEP Installations', 'Swimming pools', 'Floor and wall tilling' ,  'Landscape Installation'],
     typeSpeed: 90,
     loop: true,
 });

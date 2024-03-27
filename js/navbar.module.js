@@ -1,4 +1,5 @@
 // Get Element
+const sections = document.querySelectorAll("section")
 const navbar = document.getElementById("navbar")
 const modelBody = document.querySelector(" .navbar .model-body ")
 const navbarMenu = document.querySelector("#navbar .menu")
@@ -41,33 +42,34 @@ const niceScroll = (element) => {
     if (sectionId) {
         const sectionOffsetTop = section.offsetTop;
         window.scrollTo({
-            top: sectionOffsetTop - 30,
+            top: sectionOffsetTop - 10,
             behavior: "smooth"
         });
     }
 };
 
-const updateActiveLinkOnScroll = () => {
-    const scrollPosition = window.scrollY;
-    const homeLink = document.getElementById("index");
-    const aboutSectionOffset = document.getElementById("about").offsetTop - 30;
 
+const updateActiveLinkOnScroll = () => {
+    const scrollPosition = document.documentElement.scrollTop;
+    const homeLink = document.getElementById("index");
+    const aboutSectionOffset = document.getElementById("about").offsetTop - 100;
+    sections.forEach(section => {
+        const sectionHeight = section.offsetTop + section.offsetHeight;
+        const inSection = scrollPosition >= section.offsetTop - section.offsetHeight * 0.18 && sectionHeight - section.offsetHeight * 0.18
+        if (inSection) {
+            const currentId = section.attributes.id.value;
+            navbarLinks.forEach((el) => { el.classList.remove("active") });
+            const selector = `.navbar .menu .nav-link[href="#${currentId}"]`;
+            const element = document.querySelector(selector)
+            element && element.classList.add("active");
+        }
+    });
     if (scrollPosition >= 0 && scrollPosition < aboutSectionOffset) {
         homeLink.classList.add("active");
     } else {
         homeLink.classList.remove("active");
     }
 
-    navbarLinks.forEach(link => {
-        const sectionId = link.getAttribute('href').slice(1);
-        const section = document.getElementById(sectionId);
-        if (section) {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            const isInSection = scrollPosition >= sectionTop - 10 && scrollPosition < sectionTop + sectionHeight - 10;
-            link.classList.toggle('active', isInSection);
-        }
-    });
 };
 
 opoeNavbarButton.addEventListener("click", openNavbar)

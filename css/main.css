@@ -340,7 +340,6 @@ a {
 /* ==================== Start About Section ==================== */
 .about .title {
     padding: 10px 0px;
-    margin-bottom: 3rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
@@ -431,6 +430,7 @@ a {
 
 .services:hover .services-info {
     background-color: var(--main-color);
+    opacity: .7;
 }
 
 .services:hover .services-info h5,
