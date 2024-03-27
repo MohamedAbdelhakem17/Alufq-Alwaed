@@ -2,7 +2,7 @@ import "./navbar.module.js"
 import "./typed.module.js"
 import "./gallery.module.js"
 import "./project.module.js"
-import "./contactus.js"
+import "./contactus.module.js"
 
 const loading = document.querySelector(".loding-screen")
 const goToTopButton = document.querySelector(".go-to-top")
