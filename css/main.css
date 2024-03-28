@@ -12,8 +12,9 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif; */
+    font-family: "PT Sans", sans-serif;
     overflow: hidden;
 }
 
@@ -670,7 +671,7 @@ a {
     font-weight: 600;
 }
 
-.contact .error-massege{
+.contact .error-massege {
     font-size: 17px;
     color: red;
     margin: 5px 0px;
